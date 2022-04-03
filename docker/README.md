@@ -1,14 +1,20 @@
 ## Local IPFS docker configuration
 
-To configure the local [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) environment follow these steps:
+To configure the local [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) environment, follow these steps:
 
-1. Start docker container with docker-compose:
+1. Go to the docker folder from the project root:
+
+```sh
+cd {project_path}/docker
+```
+
+2. Start the docker container with docker-compose:
 
 ```sh
 docker-compose up -d
 ```
 
-2. Configure IPFS service CORS:
+3. Configure IPFS service CORS:
 
 ```sh
 docker exec -it ninja-ipfs ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'
