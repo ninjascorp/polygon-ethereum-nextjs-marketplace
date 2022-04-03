@@ -1,4 +1,4 @@
-## Local IPFS docker configuratiion
+## Local IPFS docker configuration
 
 To configure the local [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) environment follow these steps:
 
